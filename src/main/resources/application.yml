@@ -1,0 +1,28 @@
+server:
+  port: 5666
+
+spring:
+  application:
+    name: eureka-server
+
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enable: true
+#          lowerCaseServiceId: true
+#      routes:
+#        - id: apply-service
+#          uri: lb://apply-service
+#          predicates:
+#            - Path=/apply/**
+#          filters:
+#            - StripPrefix=1
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false

@@ -1,0 +1,8 @@
+server.port=5566
+
+spring.application.name=eureka-server
+#spring.cloud.config.uri=http://localhost:8888
+eureka.instance.hostname=localhost
+eureka.client.service-url=defaultZone: http://localhost:5566/eureka/
+eureka.client.fetch-registry=false
+eureka.client.register-with-eureka=false
