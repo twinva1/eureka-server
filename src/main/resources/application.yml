@@ -5,19 +5,6 @@ spring:
   application:
     name: eureka-server
 
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          enable: true
-#          lowerCaseServiceId: true
-#      routes:
-#        - id: apply-service
-#          uri: lb://apply-service
-#          predicates:
-#            - Path=/apply/**
-#          filters:
-#            - StripPrefix=1
 eureka:
   instance:
     hostname: localhost
